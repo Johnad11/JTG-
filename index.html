@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnad Traders Group (JTG) - Professional Forex Prop Firm Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --brand-blue: #162099;
+            --brand-green: #1BA657;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+        .hero-bg {
+            background-color: #111827; /* Dark Gray */
+            background-image: radial-gradient(circle at 1px 1px, #374151 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(27, 166, 87, 0.4), 0 4px 6px -2px rgba(27, 166, 87, 0.2);
+        }
+        .proof-card {
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .proof-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brand-green);
+        }
+        .text-brand-green { color: var(--brand-green); }
+        .bg-brand-green { background-color: var(--brand-green); }
+        .hover\:bg-brand-green-dark:hover { background-color: #168a49; }
+        .list-disc-brand-green li::marker { color: var(--brand-green); }
+        .border-brand-green { border-color: var(--brand-green); }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <!-- Image Logo -->
+                <img src="./photo_5886744698192775997_m.jpg" alt="JTG Logo" class="h-10 w-auto">
+                 <div class="flex flex-col -space-y-1">
+                    <span class="text-xl font-bold tracking-wider text-white uppercase" style="font-family: 'Oswald', sans-serif;">JOHNAD</span>
+                    <span class="text-xs text-gray-400 font-medium">Traders Group</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-300 hover:text-brand-green transition">Services</a>
+                <a href="#proof" class="text-gray-300 hover:text-brand-green transition">Our Proof</a>
+                <a href="#why-us" class="text-gray-300 hover:text-brand-green transition">Why Us</a>
+                <a href="#contact" class="text-gray-300 hover:text-brand-green transition">Contact</a>
+            </nav>
+            <a href="https://wa.me/qr/ZDTKBEGMT4HFH1" target="_blank" class="hidden md:inline-block bg-brand-green text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-brand-green-dark cta-button">
+                Chat on WhatsApp
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-300 hover:text-brand-green">Services</a><a href="#proof" class="block py-2 text-gray-300 hover:text-brand-green">Our Proof</a>
+            <a href="#why-us" class="block py-2 text-gray-300 hover:text-brand-green">Why Us</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-brand-green">Contact</a>
+             <a href="https://wa.me/qr/ZDTKBEGMT4HFH1" target="_blank" class="mt-4 inline-block w-full text-center bg-brand-green text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-brand-green-dark cta-button">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="w-full">
+        <section class="hero-bg py-24 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight uppercase">
+                    Professional Prop Firm Trading, <br class="hidden md:block"> <span class="text-brand-green">Managed for You.</span>
+                </h2>
+                <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+                    We bridge the gap between skilled Nigerian traders and global prop firm success. We manage, advise, and help you grow with transparency and professionalism.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#services" class="w-full sm:w-auto bg-brand-green text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-brand-green-dark cta-button">Explore Our Services</a>
+                    <a href="#proof" class="w-full sm:w-auto bg-gray-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-600 transition">See Our Results</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-sm font-bold text-brand-green uppercase tracking-widest">Our Services</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-white mt-2 uppercase">What We Offer</h4>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Service 1: Account Management -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full mb-6" style="background-color: rgba(27, 166, 87, 0.1);">
+                            <i data-lucide="shield-check" class="text-brand-green h-8 w-8"></i>
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-3 uppercase">Prop Firm Account Management</h5>
+                        <p class="text-gray-400 mb-4">Hands-on management of your prop firm accounts. We focus on consistent profitability, strict risk management, and scaling strategies for long-term growth.</p>
+                        <div class="text-left bg-gray-700 p-4 rounded-lg">
+                            <p class="text-white font-semibold">Revenue Model:</p>
+                            <ul class="list-disc list-inside list-disc-brand-green mt-2 text-gray-300">
+                                <li>50% Profit Share of every payout</li>
+                                <li>Account Fee Refund upon first payout</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Service 2: Advisory -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full mb-6" style="background-color: rgba(27, 166, 87, 0.1);"><i data-lucide="lightbulb" class="text-brand-green h-8 w-8"></i>
+                        </div>
+                        <h5 class="text-2xl font-bold text-white mb-3 uppercase">Prop Firm Advisory Services</h5>
+                        <p class="text-gray-400 mb-4">Expert guidance to help you navigate the prop firm landscape. We ensure you choose a firm that aligns perfectly with your trading style and financial goals.</p>
+                         <div class="text-left bg-gray-700 p-4 rounded-lg">
+                            <p class="text-white font-semibold">Revenue Model:</p>
+                             <ul class="list-disc list-inside list-disc-brand-green mt-2 text-gray-300">
+                                <li>Starting at ₦10,000 per session</li>
+                                <li>Custom packages available for groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof / Credibility Section -->
+        <section id="proof" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-sm font-bold text-brand-green uppercase tracking-widest">Our Track Record</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-white mt-2 uppercase">Credibility You Can Trust</h4>
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-400">We believe in full transparency. Here are some of our verified results from leading prop firms.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Payout Proof Card with Slider -->
+                    <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden proof-card">
+                        <div class="relative w-full h-48 bg-gray-900">
+                             <img src="photo_5886744698192775994_y.jpg" alt="FundedNext Payout Proof" class="payout-slide w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-1000 ease-in-out opacity-100">
+                             <img src="photo_5886744698192775995_y.jpg" alt="My Forex Funds Payout Proof" class="payout-slide w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-xl font-bold text-white uppercase">Successful Payouts</h5>
+                            <p class="text-gray-400 mt-2">Consistent profit withdrawals from our managed accounts. Real, verified results.</p>
+                        </div>
+                    </div>
+                    <!-- Certificate Proof Card with Slider -->
+                    <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden proof-card">
+                        <div class="relative w-full h-48 bg-gray-900">
+                            <img src="photo_5886744698192775992_y.jpg" alt="MyForexFunds Certificate" class="certificate-slide w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-1000 ease-in-out opacity-100">
+                            <img src="photo_5886744698192775996_y.jpg" alt="FundedNext Crown Trader Certificate" class="certificate-slide w-full h-full object-contain absolute top-0 left-0 transition-opacity duration-1000 ease-in-out opacity-0">
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-xl font-bold text-white uppercase">Funded Certificates</h5>
+                            <p class="text-gray-400 mt-2">Official certificates confirming successful completion of prop firm challenges.</p></div>
+                    </div>
+                    <!-- VIP/Scale Proof Card -->
+                    <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden proof-card">
+                        <div class="relative w-full h-48 bg-gray-900">
+                            <img src="photo_5886744698192775993_x.jpg" alt="My Forex Funds VIP Account Status" class="w-full h-full object-contain">
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-xl font-bold text-white uppercase">VIP Badges & Scaling</h5>
+                            <p class="text-gray-400 mt-2">Proof of our ability to not just pass, but to scale accounts to higher capital levels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h3 class="text-sm font-bold text-brand-green uppercase tracking-widest">Why Choose JTG</h3>
+                    <h4 class="text-3xl md:text-4xl font-bold text-white mt-2 uppercase">Your Professional Partner in Trading</h4>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg" style="background-color: rgba(27, 166, 87, 0.1);">
+                            <i data-lucide="eye" class="text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg text-white uppercase">Transparency</h5>
+                            <p class="text-gray-400 mt-1">Verified results and clear, structured profit-sharing agreements. No hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg" style="background-color: rgba(27, 166, 87, 0.1);">
+                             <i data-lucide="bar-chart-big" class="text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg text-white uppercase">Proven Expertise</h5>
+                            <p class="text-gray-400 mt-1">Our traders have a proven track record of passing and managing prop firm accounts successfully.</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg" style="background-color: rgba(27, 166, 87, 0.1);">
+                            <i data-lucide="umbrella" class="text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg text-white uppercase">Strict Risk Management</h5>
+                            <p class="text-gray-400 mt-1">We prioritize account protection and long-term capital growth over reckless, short-term gains.</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg" style="background-color: rgba(27, 166, 87, 0.1);">
+                             <i data-lucide="globe" class="text-brand-green"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-lg text-white uppercase">Nigeria-Rooted, Global-Minded</h5><p class="text-gray-400 mt-1">We understand the unique challenges of Nigerian traders while operating with global standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contact / CTA Section -->
+        <section id="contact" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-bold text-white uppercase">Ready to Elevate Your Trading Journey?</h2>
+                 <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+                    Whether you need expert management or professional advice, we are here to help you succeed. Let's talk about your goals.
+                </p>
+                <div class="mt-8">
+                    <a href="https://wa.me/qr/ZDTKBEGMT4HFH1" target="_blank" class="bg-brand-green text-white font-bold py-4 px-10 rounded-full shadow-lg text-lg hover:bg-brand-green-dark cta-button inline-block">
+                        Start a Conversation on WhatsApp
+                    </a>
+                </div>
+                 <div class="mt-12 flex justify-center space-x-6">
+                    <a href="https://www.instagram.com/johnad_trades" target="_blank" class="text-gray-400 hover:text-brand-green transition">
+                        <i data-lucide="instagram" class="h-8 w-8"></i>
+                    </a>
+                    <a href="https://youtube.com/@johnad_trades"  class="text-gray-400 hover:text-brand-green transition">
+                        <i data-lucide="youtube" class="h-8 w-8"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2024 Johnad Traders Group (JTG). All Rights Reserved.</p>
+            <p class="text-sm mt-2">Built with professionalism for Nigerian traders.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        document.querySelectorAll('#mobile-menu a, .container a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if(link.getAttribute('href').startsWith('#')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Payout Image Slider Logic
+        const payoutSlides = document.querySelectorAll('.payout-slide');
+        let currentPayoutSlide = 0;
+
+        if (payoutSlides.length > 1) {
+            setInterval(() => {
+                payoutSlides[currentPayoutSlide].classList.add('opacity-0');
+                currentPayoutSlide = (currentPayoutSlide + 1) % payoutSlides.length;
+                payoutSlides[currentPayoutSlide].classList.remove('opacity-0');
+            }, 4000); // Change every 4 seconds
+        }
+
+        // Certificate Image Slider Logic
+        const certificateSlides = document.querySelectorAll('.certificate-slide');
+        let currentCertificateSlide = 0;
+
+        if (certificateSlides.length > 1) {
+            setInterval(() => {
+                certificateSlides[currentCertificateSlide].classList.add('opacity-0');
+                currentCertificateSlide = (currentCertificateSlide + 1) % certificateSlides.length;
+                certificateSlides[currentCertificateSlide].classList.remove('opacity-0');
+            }, 4500); // Change every 4.5 seconds to vary the timing
+        }
+    </script>
+</body>
+</html>
