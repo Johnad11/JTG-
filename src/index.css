@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #162099;
+  --color-brand-green: #1BA657;
+  --color-brand-green-dark: #168a49;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.hero-bg {
+  background-color: #111827; /* Dark Gray */
+  background-image: radial-gradient(circle at 1px 1px, #374151 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.cta-button {
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(27, 166, 87, 0.4), 0 4px 6px -2px rgba(27, 166, 87, 0.2);
+}
+
+.proof-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.proof-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-brand-green);
+}
+
+.list-disc-brand-green li::marker {
+  color: var(--color-brand-green);
+}
